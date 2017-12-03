@@ -1,0 +1,192 @@
+{
+  "version" : 1,
+  "language" : "Java",
+  "framework" : "junit",
+  "browser" : "Chrome",
+  "connectionString" : "",
+  "actions" : [ {
+    "commonClass" : "WebDriver",
+    "actionName" : "Get",
+    "parameters" : {
+      "url" : "http://example.selenium.jp/reserveApp/"
+    },
+    "locatorInfos" : [ ]
+  }, {
+    "commonClass" : "WebElement",
+    "actionName" : "Clear",
+    "parameters" : { },
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "reserve_year",
+        "name" : "reserve_y",
+        "xpath" : "//input[@id=\"reserve_year\"]"
+      }
+    } ]
+  }, {
+    "commonClass" : "WebElement",
+    "actionName" : "SendKeys",
+    "parameters" : {
+      "keys" : "2018"
+    },
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "reserve_year",
+        "name" : "reserve_y",
+        "xpath" : "//input[@id=\"reserve_year\"]"
+      }
+    } ]
+  }, {
+    "commonClass" : "WebElement",
+    "actionName" : "Clear",
+    "parameters" : { },
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "reserve_month",
+        "name" : "reserve_m",
+        "xpath" : "//input[@id=\"reserve_month\"]"
+      }
+    } ]
+  }, {
+    "commonClass" : "WebElement",
+    "actionName" : "SendKeys",
+    "parameters" : {
+      "keys" : "1"
+    },
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "reserve_month",
+        "name" : "reserve_m",
+        "xpath" : "//input[@id=\"reserve_month\"]"
+      }
+    } ]
+  }, {
+    "commonClass" : "WebElement",
+    "actionName" : "Clear",
+    "parameters" : { },
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "reserve_day",
+        "name" : "reserve_d",
+        "xpath" : "//input[@id=\"reserve_day\"]"
+      }
+    } ]
+  }, {
+    "commonClass" : "WebElement",
+    "actionName" : "SendKeys",
+    "parameters" : {
+      "keys" : "27"
+    },
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "reserve_day",
+        "name" : "reserve_d",
+        "xpath" : "//input[@id=\"reserve_day\"]"
+      }
+    } ]
+  }, {
+    "commonClass" : "WebElement",
+    "actionName" : "Clear",
+    "parameters" : { },
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "headcount",
+        "name" : "hc",
+        "xpath" : "//input[@id=\"headcount\"]"
+      }
+    } ]
+  }, {
+    "commonClass" : "WebElement",
+    "actionName" : "SendKeys",
+    "parameters" : {
+      "keys" : "2"
+    },
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "headcount",
+        "name" : "hc",
+        "xpath" : "//input[@id=\"headcount\"]"
+      }
+    } ]
+  }, {
+    "commonClass" : "WebElement",
+    "actionName" : "Click",
+    "parameters" : { },
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "plan_a",
+        "name" : "plan_a",
+        "xpath" : "//input[@id=\"plan_a\"]"
+      }
+    } ]
+  }, {
+    "commonClass" : "WebElement",
+    "actionName" : "SendKeys",
+    "parameters" : {
+      "keys" : "日本 太郎"
+    },
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "guestname",
+        "name" : "gname",
+        "xpath" : "//input[@id=\"guestname\"]"
+      }
+    } ]
+  }, {
+    "commonClass" : "WebElement",
+    "actionName" : "Click",
+    "parameters" : { },
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "goto_next",
+        "className" : "btn",
+        "xpath" : "//button[@id=\"goto_next\"]"
+      }
+    } ]
+  }, {
+    "commonClass" : "WebElement",
+    "actionName" : "Verification",
+    "parameters" : [ {
+      "name" : "Text",
+      "commonDataType" : "string",
+      "isOptional" : true,
+      "defaultValue" : "\"\"",
+      "value" : "\"21500\""
+    }, {
+      "name" : "IsDisplayed",
+      "commonDataType" : "boolean",
+      "isOptional" : true,
+      "defaultValue" : "false",
+      "value" : "true"
+    } ],
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "price",
+        "xpath" : "//span[@id=\"price\"]"
+      }
+    } ]
+  } ]
+}
