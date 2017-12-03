@@ -32,11 +32,12 @@ public class ReservationTest {
 		driver.findElement(By.id("headcount")).clear();
 		driver.findElement(By.id("headcount")).sendKeys("2");
 		driver.findElement(By.id("plan_a")).click();
+		driver.findElement(By.id("plan_b")).click();
 		driver.findElement(By.id("guestname")).sendKeys("日本 太郎");
 		driver.findElement(By.id("goto_next")).click();
-		WebElement price2 = driver.findElement(By.id("price"));
-		Assert.assertEquals("21500", price2.getText());
-		Assert.assertEquals(true, price2.isDisplayed());
+		WebElement price = driver.findElement(By.id("price"));
+		Assert.assertEquals("23500", price.getText());
+		Assert.assertEquals(true, price.isDisplayed());
 	}
 
 	@After

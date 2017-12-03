@@ -138,6 +138,19 @@
     } ]
   }, {
     "commonClass" : "WebElement",
+    "actionName" : "Click",
+    "parameters" : { },
+    "locatorInfos" : [ {
+      "className" : "WebElement",
+      "isDirectChild" : false,
+      "attributes" : {
+        "id" : "plan_b",
+        "name" : "plan_b",
+        "xpath" : "//input[@id=\"plan_b\"]"
+      }
+    } ]
+  }, {
+    "commonClass" : "WebElement",
     "actionName" : "SendKeys",
     "parameters" : {
       "keys" : "日本 太郎"
@@ -172,7 +185,7 @@
       "commonDataType" : "string",
       "isOptional" : true,
       "defaultValue" : "\"\"",
-      "value" : "\"21500\""
+      "value" : "\"23500\""
     }, {
       "name" : "IsDisplayed",
       "commonDataType" : "boolean",
